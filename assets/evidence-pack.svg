@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="360" viewBox="0 0 620 360" role="img" aria-labelledby="title desc">
+  <title id="title">Governance evidence pack</title>
+  <desc id="desc">An abstract governance evidence pack showing purpose, notice, policy route, receipt, subject trace, and missing evidence.</desc>
+  <rect width="620" height="360" rx="18" fill="#101419"/>
+  <g stroke="#2b3a43" stroke-width="1" opacity="0.7">
+    <path d="M58 58h504M58 302h504"/>
+    <path d="M58 58v244M562 58v244"/>
+  </g>
+  <rect x="166" y="42" width="288" height="276" rx="16" fill="#17222a" stroke="#5cc8bb" stroke-width="3"/>
+  <path d="M202 94h216M202 130h216M202 166h216M202 202h216M202 238h216" stroke="#2b3a43" stroke-width="3" stroke-linecap="round"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#edf4f7">
+    <text x="222" y="101">Purpose</text>
+    <text x="222" y="137">Notice</text>
+    <text x="222" y="173">Policy route</text>
+    <text x="222" y="209">Receipt</text>
+    <text x="222" y="245">Subject trace</text>
+    <text x="222" y="281">Missing evidence</text>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 93l8 8 16-18" stroke="#5cc8bb" stroke-width="4"/>
+    <path d="M190 129l8 8 16-18" stroke="#5cc8bb" stroke-width="4"/>
+    <path d="M190 165l8 8 16-18" stroke="#5cc8bb" stroke-width="4"/>
+    <path d="M190 201l8 8 16-18" stroke="#5cc8bb" stroke-width="4"/>
+    <path d="M190 237l8 8 16-18" stroke="#5cc8bb" stroke-width="4"/>
+    <path d="M190 273l22 0M201 262v22" stroke="#d3a44d" stroke-width="4"/>
+  </g>
+</svg>

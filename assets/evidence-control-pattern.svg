@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="360" viewBox="0 0 620 360" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence control pattern</title>
+  <desc id="desc">An abstract flow from source signal through canonical identity, control gate, proof artifact, and human review.</desc>
+  <rect width="620" height="360" rx="18" fill="#101419"/>
+  <g stroke="#2b3a43" stroke-width="1" opacity="0.7">
+    <path d="M44 62h532M44 132h532M44 202h532M44 272h532"/>
+    <path d="M108 36v288M232 36v288M356 36v288M480 36v288"/>
+  </g>
+  <path d="M104 184h96M236 184h96M368 184h96" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M196 174l14 10-14 10M328 174l14 10-14 10M460 174l14 10-14 10" fill="none" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#edf4f7" text-anchor="middle">
+    <circle cx="104" cy="184" r="42" fill="#17222a" stroke="#5cc8bb" stroke-width="3"/>
+    <text x="104" y="176">Source</text>
+    <text x="104" y="201">signal</text>
+    <rect x="197" y="142" width="94" height="84" rx="12" fill="#17222a" stroke="#89a8e8" stroke-width="3"/>
+    <text x="244" y="176">Canonical</text>
+    <text x="244" y="201">identity</text>
+    <path d="M368 136l52 30v60l-52 30-52-30v-60z" fill="#17222a" stroke="#d3a44d" stroke-width="3"/>
+    <text x="368" y="176">Control</text>
+    <text x="368" y="201">gate</text>
+    <rect x="448" y="142" width="98" height="84" rx="8" fill="#17222a" stroke="#5cc8bb" stroke-width="3"/>
+    <path d="M468 166h58M468 184h58M468 202h38" stroke="#a8b6c2" stroke-width="3" stroke-linecap="round"/>
+    <text x="497" y="251">Proof artifact</text>
+    <circle cx="526" cy="88" r="34" fill="#17222a" stroke="#d3a44d" stroke-width="3"/>
+    <path d="M511 88h30M526 73v30" stroke="#d3a44d" stroke-width="3" stroke-linecap="round"/>
+    <text x="526" y="48">Human review</text>
+  </g>
+  <path d="M500 122c10 24 9 44 1 60" fill="none" stroke="#d3a44d" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8"/>
+</svg>

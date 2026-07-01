@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 620 360">
+  <title id="title">TG360 evidence cockpit</title>
+  <desc id="desc">An abstract TG360 dashboard shows known context, bounded scope, synthetic demo status, not activated boundary, proof visibility, and private walkthrough evidence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101419"/>
+      <stop offset="1" stop-color="#183431"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="620" height="360" rx="26" fill="url(#bg)"/>
+  <rect x="44" y="42" width="532" height="276" rx="20" fill="#171d23" stroke="#4d626f" filter="url(#shadow)"/>
+  <rect x="64" y="64" width="492" height="42" rx="14" fill="#1e2930" stroke="#2b3a43"/>
+  <text x="86" y="91" fill="#edf4f7" font-size="17" font-weight="800">TG360 evidence cockpit</text>
+  <circle cx="512" cy="85" r="7" fill="#5cc8bb"/>
+  <circle cx="534" cy="85" r="7" fill="#d3a44d"/>
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect x="64" y="128" width="150" height="66" rx="14" fill="#183431" stroke="#5cc8bb"/>
+    <text x="139" y="158" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="800">known context</text>
+    <text x="139" y="178" text-anchor="middle" fill="#a8b6c2" font-size="12">inspectable</text>
+    <rect x="234" y="128" width="150" height="66" rx="14" fill="#183431" stroke="#5cc8bb"/>
+    <text x="309" y="158" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="800">bounded scope</text>
+    <text x="309" y="178" text-anchor="middle" fill="#a8b6c2" font-size="12">explicit limits</text>
+    <rect x="404" y="128" width="150" height="66" rx="14" fill="#2d2114" stroke="#d3a44d"/>
+    <text x="479" y="158" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="800">synthetic demo</text>
+    <text x="479" y="178" text-anchor="middle" fill="#a8b6c2" font-size="12">clearly marked</text>
+    <rect x="64" y="218" width="150" height="66" rx="14" fill="#2d2114" stroke="#d3a44d"/>
+    <text x="139" y="248" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="800">not activated</text>
+    <text x="139" y="268" text-anchor="middle" fill="#a8b6c2" font-size="12">boundary</text>
+    <rect x="234" y="218" width="150" height="66" rx="14" fill="#183431" stroke="#5cc8bb"/>
+    <text x="309" y="248" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="800">proof visibility</text>
+    <text x="309" y="268" text-anchor="middle" fill="#a8b6c2" font-size="12">review posture</text>
+    <rect x="404" y="218" width="150" height="66" rx="14" fill="#183431" stroke="#5cc8bb"/>
+    <text x="479" y="248" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="800">walkthrough</text>
+    <text x="479" y="268" text-anchor="middle" fill="#a8b6c2" font-size="12">private evidence</text>
+  </g>
+</svg>

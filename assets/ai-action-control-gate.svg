@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="360" viewBox="0 0 620 360" role="img" aria-labelledby="title desc">
+  <title id="title">AI action control gate</title>
+  <desc id="desc">An abstract AI request moving through scope and policy checks before allow, block, or conditional outcome and a proof receipt.</desc>
+  <rect width="620" height="360" rx="18" fill="#101419"/>
+  <g stroke="#2b3a43" stroke-width="1" opacity="0.7">
+    <path d="M44 80h532M44 280h532"/>
+    <path d="M44 80v200M576 80v200"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <rect x="50" y="139" width="116" height="82" rx="12" fill="#17222a" stroke="#89a8e8" stroke-width="3"/>
+    <text x="108" y="175" fill="#edf4f7" font-size="20" font-weight="700">AI</text>
+    <text x="108" y="200" fill="#edf4f7" font-size="20" font-weight="700">request</text>
+    <path d="M178 180h58" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round"/>
+    <path d="M229 170l14 10-14 10" fill="none" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M302 105l84 48v96l-84 48-84-48v-96z" fill="#17222a" stroke="#d3a44d" stroke-width="3"/>
+    <text x="302" y="157" fill="#edf4f7" font-size="19" font-weight="700">Scope check</text>
+    <path d="M260 181h84" stroke="#2b3a43" stroke-width="3"/>
+    <text x="302" y="208" fill="#edf4f7" font-size="19" font-weight="700">Policy check</text>
+    <path d="M390 180h54" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round"/>
+    <path d="M437 170l14 10-14 10" fill="none" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="458" y="118" width="112" height="124" rx="12" fill="#17222a" stroke="#5cc8bb" stroke-width="3"/>
+    <text x="514" y="151" fill="#edf4f7" font-size="18" font-weight="700">Allow</text>
+    <text x="514" y="180" fill="#edf4f7" font-size="18" font-weight="700">Block</text>
+    <text x="514" y="209" fill="#edf4f7" font-size="18" font-weight="700">Conditional</text>
+    <rect x="206" y="35" width="192" height="44" rx="8" fill="#1e2930" stroke="#2b3a43"/>
+    <text x="302" y="64" fill="#edf4f7" font-size="20" font-weight="700">Proof receipt</text>
+    <path d="M302 80v32" stroke="#d3a44d" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 7"/>
+  </g>
+</svg>
