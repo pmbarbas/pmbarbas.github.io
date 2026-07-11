@@ -105,6 +105,7 @@ TrustGate Sovereign must lead with:
 - TG360 as the evidence cockpit
 - TGSG trust surfaces
 - an illustrative watsonx Orchestrate / Manta / Db2 scenario with no live integration claim
+- a vendor-neutral architecture note that the same execution-control roles may be fulfilled by other orchestration, lineage, context, data, application, or API technologies
 - clear boundaries and private walkthrough posture
 
 Certify, Evidra, and FieldDelta remain related evidence-first systems, but they must not compete visually or semantically with the TrustGate Sovereign lead.

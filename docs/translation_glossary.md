@@ -6,7 +6,7 @@ This glossary controls Portuguese localization for the static public surface.
 
 - Use European Portuguese (`pt-PT`).
 - Product names remain untranslated: Pedro Barbas, Deal Hunter, TrustGate, Certify, Evidra, and FieldDelta.
-- TrustGate Sovereign, TG360, TGSG, CACSAC, CP-7, watsonx Orchestrate, Manta, and Db2 remain untranslated.
+- TrustGate Sovereign, TG360, TGSG, CACSAC, CP-7, watsonx Orchestrate, Manta, Db2, LangGraph, Microsoft Copilot Studio, and Amazon Bedrock AgentCore remain untranslated.
 - Avoid Brazilian Portuguese terms such as `controle`, `time`, `usuário`, `fato`, `arquivo`, and `contato`.
 - Avoid legal, compliance, production, customer, or regulatory guarantees.
 - Avoid flags without text labels in language switching. Use `EN` and `PT`.
@@ -40,3 +40,5 @@ This glossary controls Portuguese localization for the static public surface.
 | IBM endorsement | forbidden phrase | Do not imply endorsement or partnership. |
 | Live integration | forbidden phrase | Do not imply live watsonx Orchestrate, Manta, or Db2 integration. |
 | ROI guarantee | forbidden phrase | Do not claim ROI, realized savings, guaranteed savings, or avoided liability. |
+| Vendor stack | Stack de fornecedor | Use only to clarify that TrustGate Sovereign is not limited to one vendor stack. |
+| Architectural roles | Papéis arquiteturais | Use for vendor-neutral execution-control roles, not capability or integration claims. |

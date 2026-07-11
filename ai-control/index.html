@@ -144,6 +144,9 @@
             <p>
               For example, an agentic workflow in watsonx Orchestrate may propose an action against Db2. Manta may provide lineage and context. TrustGate Sovereign sits between intent and execution: who is acting, what is requested, which data and route are involved, what evidence is sufficient, and whether the action is cleared or held.
             </p>
+            <p>
+              The same architectural pattern is not limited to that stack. Other orchestration environments — for example, LangGraph, Microsoft Copilot Studio, or Amazon Bedrock AgentCore — together with other lineage, catalogue, governance, data, application, or API systems may occupy the corresponding roles. TrustGate Sovereign is designed around the execution-control pattern, not a single vendor stack.
+            </p>
           </div>
 
           <div class="sovereign-flow" aria-label="Illustrative enterprise stack flow">
@@ -161,9 +164,10 @@
               width="620"
               height="360"
             >
+            <figcaption>Illustrated with an IBM enterprise stack. Architectural roles may be fulfilled by other enterprise technologies; examples are illustrative only and do not state live, certified, supported, or endorsed integrations.</figcaption>
           </figure>
 
-          <p class="scenario-note">Illustrative example only. No live watsonx Orchestrate, Manta, or Db2 integration is claimed on this public page. These products are examples of an enterprise stack. They are not required to use TrustGate Sovereign.</p>
+          <p class="scenario-note">Illustrative enterprise-stack example only. The diagram uses watsonx Orchestrate, Manta, and Db2 to make the operating roles concrete. TrustGate Sovereign is not limited to IBM technologies: other orchestration, lineage, context, data, application, and API environments may occupy the same roles. No live, certified, production, supported, endorsed, or partner integration is claimed on this public page.</p>
         </div>
       </section>
 

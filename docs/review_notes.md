@@ -105,6 +105,14 @@
 - Review `/pt/ai-control/` with a Portugal-native reader if possible, especially IA agêntica, implantação, autorização, cockpit de evidência, and Porta mantida.
 - Check the three new SVG assets for readability at desktop, tablet, and mobile widths.
 
+## Phase 3.0R1 Notes
+
+- The watsonx Orchestrate / Manta / Db2 scenario remains the lead concrete illustrative enterprise-stack example.
+- The existing working-example SVG labels were not removed, neutralized, or replaced.
+- `/ai-control/` and `/pt/ai-control/` now state that equivalent architectural roles may also be fulfilled by other orchestration, lineage, catalogue/governance, data, application, or API technologies.
+- LangGraph, Microsoft Copilot Studio, and Amazon Bedrock AgentCore are named only as architectural examples, not as claimed integrations.
+- Confirm the new vendor-neutral clarification does not read as live integration, certified compatibility, support, endorsement, partnership, production deployment, connector execution, customer use, or production-data use.
+
 ## Manual Review Before Publication
 
 - Review homepage in 10 seconds: are both tracks clear?
