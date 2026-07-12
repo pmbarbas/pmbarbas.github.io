@@ -52,7 +52,9 @@ Manual review focus:
 - `/procurement/`: the page should feel Ireland-first, buyer-native, and Deal Hunter-only.
 - `/pt/procurement/`: the page should feel Portugal-native, buyer-native, and Deal Hunter-only.
 - `/procurement/`: "What is not claimed" must appear mid-page, not only in the footer.
-- `/ai-control/` and `/pt/ai-control/`: TrustGate must lead, and Certify must read as the local technical proof slice.
+- `/ai-control/` and `/pt/ai-control/`: TrustGate must lead with action clearance, receipt evidence, and protected-target verification; Certify must remain a secondary local technical proof slice.
+- `/ai-control/` and `/pt/ai-control/`: verify the DORA and data-protection disclaimers, illustrative-stack boundary, controlled-disclosure section, and root-card alignment.
+- Review EN/PT desktop, mobile, and print/PDF output before approval.
 - all pages: Boundaries/Limites and Contact/Contacto navigation must work.
 - all pages: EN/PT switchers must map only to equivalent pages.
 

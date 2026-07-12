@@ -1,62 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 620 360">
-  <title id="title">TrustGate Sovereign execution firewall</title>
-  <desc id="desc">An abstract agentic request passes through authority, scope, route, and evidence checks before TrustGate Sovereign clears or holds the action and produces proof.</desc>
+  <title id="title">TrustGate Sovereign action-clearance and proof chain</title>
+  <desc id="desc">A proposed action and its authority, purpose, target, route, and evidence context move through TrustGate Sovereign action clearance, a bound receipt, protected-target verification, acceptance or rejection before state change, and outcome proof.</desc>
   <defs>
-    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#13202b"/>
-      <stop offset="1" stop-color="#0d2c2a"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#5cc8bb"/>
-      <stop offset="1" stop-color="#d3a44d"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.25"/>
-    </filter>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#13202b"/><stop offset="1" stop-color="#0d2c2a"/></linearGradient>
   </defs>
   <rect width="620" height="360" rx="26" fill="url(#panel)"/>
-  <g fill="none" stroke="#4d626f" stroke-width="1">
-    <path d="M64 54h492M64 306h492M64 54v252M556 54v252"/>
-    <path d="M104 88h412M104 272h412"/>
+  <g id="action-context" data-role="action-context" font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="30" y="42" fill="#a8b6c2" font-size="12" font-weight="700">ACTION CONTEXT</text>
+    <g fill="#183431" stroke="#5cc8bb"><rect x="30" y="56" width="98" height="34" rx="9"/><rect x="138" y="56" width="112" height="34" rx="9"/><rect x="260" y="56" width="98" height="34" rx="9"/><rect x="368" y="56" width="98" height="34" rx="9"/><rect x="476" y="56" width="114" height="34" rx="9"/></g>
+    <g fill="#edf4f7" font-size="12" font-weight="750" text-anchor="middle"><text x="79" y="78">Authority</text><text x="194" y="78">Purpose / scope</text><text x="309" y="78">Target</text><text x="417" y="78">Route</text><text x="533" y="78">Evidence</text></g>
   </g>
-  <g filter="url(#shadow)">
-    <rect x="42" y="137" width="126" height="86" rx="16" fill="#1e2930" stroke="#5cc8bb"/>
-    <text x="105" y="170" text-anchor="middle" fill="#edf4f7" font-size="15" font-weight="700">Agentic</text>
-    <text x="105" y="192" text-anchor="middle" fill="#a8b6c2" font-size="14">request</text>
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <g id="proposed-action" data-role="proposed-action"><rect x="22" y="146" width="82" height="92" rx="14" fill="#1e2930" stroke="#5cc8bb"/><text x="63" y="181" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">Proposed</text><text x="63" y="201" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">action</text></g>
+    <g id="trustgate-clearance" data-role="trustgate-clearance"><rect x="120" y="138" width="104" height="108" rx="15" fill="#102823" stroke="#d3a44d" stroke-width="2"/><text x="172" y="174" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">TrustGate</text><text x="172" y="194" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">Sovereign</text><text x="172" y="220" text-anchor="middle" fill="#a8b6c2" font-size="11">action clearance</text></g>
+    <g id="bound-receipt" data-role="bound-receipt"><rect x="240" y="146" width="82" height="92" rx="14" fill="#183431" stroke="#5cc8bb"/><text x="281" y="181" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">Bound</text><text x="281" y="201" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">receipt</text></g>
+    <g id="protected-target-verification" data-role="protected-target-verification"><rect x="338" y="130" width="126" height="124" rx="16" fill="#102823" stroke="#d3a44d" stroke-width="2"/><text x="401" y="170" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">Protected-target</text><text x="401" y="191" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">verification</text><text x="401" y="219" text-anchor="middle" fill="#a8b6c2" font-size="11">before state change</text></g>
+    <g id="target-outcome" data-role="target-outcome"><rect x="480" y="146" width="74" height="92" rx="14" fill="#1e2930" stroke="#5cc8bb"/><text x="517" y="179" text-anchor="middle" fill="#edf4f7" font-size="12" font-weight="800">Accept</text><text x="517" y="199" text-anchor="middle" fill="#a8b6c2" font-size="11">or reject</text><text x="517" y="217" text-anchor="middle" fill="#a8b6c2" font-size="10">at target</text></g>
+    <g id="outcome-proof" data-role="outcome-proof"><rect x="570" y="146" width="36" height="92" rx="12" fill="#2d2114" stroke="#d3a44d"/><text x="588" y="181" text-anchor="middle" fill="#edf4f7" font-size="9" font-weight="800">Outcome</text><text x="588" y="199" text-anchor="middle" fill="#edf4f7" font-size="9" font-weight="800">proof</text></g>
   </g>
-  <path d="M176 180h52" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round"/>
-  <path d="M222 171l16 9-16 9" fill="none" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <g>
-    <rect x="244" y="79" width="132" height="44" rx="12" fill="#183431" stroke="#5cc8bb"/>
-    <text x="310" y="106" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="700">Authority</text>
-    <rect x="244" y="135" width="132" height="44" rx="12" fill="#183431" stroke="#5cc8bb"/>
-    <text x="310" y="162" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="700">Scope</text>
-    <rect x="244" y="191" width="132" height="44" rx="12" fill="#183431" stroke="#5cc8bb"/>
-    <text x="310" y="218" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="700">Route</text>
-    <rect x="244" y="247" width="132" height="44" rx="12" fill="#183431" stroke="#5cc8bb"/>
-    <text x="310" y="274" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="700">Evidence</text>
-  </g>
-  <path d="M386 180h40" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round"/>
-  <path d="M420 171l16 9-16 9" fill="none" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <g filter="url(#shadow)">
-    <rect x="436" y="104" width="138" height="152" rx="18" fill="#102823" stroke="url(#accent)" stroke-width="3"/>
-    <text x="505" y="141" text-anchor="middle" fill="#edf4f7" font-size="16" font-weight="800">TrustGate</text>
-    <text x="505" y="163" text-anchor="middle" fill="#edf4f7" font-size="16" font-weight="800">Sovereign</text>
-    <path d="M471 190h68" stroke="#d3a44d" stroke-width="4" stroke-linecap="round"/>
-    <text x="505" y="222" text-anchor="middle" fill="#a8b6c2" font-size="13">execution firewall</text>
-  </g>
-  <g>
-    <path d="M505 257v35" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round"/>
-    <path d="M496 286l9 16 9-16" fill="none" stroke="#5cc8bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="436" y="304" width="64" height="32" rx="10" fill="#183431" stroke="#5cc8bb"/>
-    <text x="468" y="325" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="700">clear</text>
-    <rect x="510" y="304" width="64" height="32" rx="10" fill="#2d2114" stroke="#d3a44d"/>
-    <text x="542" y="325" text-anchor="middle" fill="#edf4f7" font-size="13" font-weight="700">hold</text>
-  </g>
-  <g>
-    <path d="M505 104V68" stroke="#d3a44d" stroke-width="4" stroke-linecap="round"/>
-    <path d="M496 74l9-16 9 16" fill="none" stroke="#d3a44d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="458" y="26" width="94" height="34" rx="12" fill="#2d2114" stroke="#d3a44d"/>
-    <text x="505" y="48" text-anchor="middle" fill="#edf4f7" font-size="14" font-weight="700">proof</text>
-  </g>
+  <g fill="none" stroke="#5cc8bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path data-role="action-to-clearance" d="M106 192h10l-6-6m6 6-6 6"/><path data-role="clearance-to-receipt" d="M226 192h10l-6-6m6 6-6 6"/><path data-role="receipt-to-verification" d="M324 192h10l-6-6m6 6-6 6"/><path data-role="verification-to-outcome" d="M466 192h10l-6-6m6 6-6 6"/><path data-role="outcome-to-proof" d="M556 192h10l-6-6m6 6-6 6"/></g>
+  <text x="310" y="302" text-anchor="middle" fill="#a8b6c2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">Clearance is verified at the protected target before any state change</text>
 </svg>

@@ -1,5 +1,69 @@
 # Review Notes
 
+## Phase 3.1R3R1 Notes
+
+- Replaced reused AI Control visual filenames with three deterministic versioned EN/PT pairs.
+- Confirmed no-cache served hashes match repository hashes for all six new assets.
+- Enforced identical paired viewBox, node geometry, IDs, role sequence, and connector routing.
+- Browser bounds audit: 74 owned text groups checked, zero padding or overflow failures.
+- Corrected the Portuguese enterprise vendor, identity/authority, TrustGate, and evidence labels.
+- Inspected fresh HeadlessChrome A4 portrait PDFs: EN 14 pages, PT 14 pages.
+- No claim, disclosure, DORA, privacy, positioning, or CTA behavior change.
+- Pedro final visual approval remains pending.
+
+## Phase 3.1R3R2 Notes
+
+- Corrected print inheritance for the EN/PT action-chain summary, decision-authority note, and enterprise internal caption.
+- Applied the existing `#edf4f7` neutral only to direct dark-panel text; opacity remains 1.
+- Screen and print-emulated contrast are `16.62:1` for all six affected elements.
+- Print color adjustment is explicitly `exact`; no broad global override was added.
+- Fresh EN/PT A4 portrait PDFs remain 14 pages each. Pages 2 and 6 were inspected at full resolution.
+- No HTML, SVG, wording, route, geometry, claim, disclosure, CTA, or pagination change.
+- Pedro final visual approval remains pending.
+
+## Phase 3.1 Notes
+
+- Review the new action-clearance and proof-layer H1 in EN and pt-PT without restoring the retired execution-firewall claim.
+- Confirm the protected-target principle reads as a public principle backed only by a bounded local reference demonstration.
+- Confirm the TrustGate decision, receipt, and target verification remain distinct and no direct target-write implication remains.
+- Confirm TG360 reads as an evidence cockpit and not a second decision engine.
+- Confirm DORA relevance is visible but subordinate to the product category and carries the exact regulatory disclaimer.
+- Confirm the data-protection lens does not imply GDPR compliance or replace DPIA, lawful-basis, records, DPO judgement, or legal determination.
+- Confirm the IBM stack remains illustrative and vendor-neutral alternatives remain architectural examples only.
+- Confirm EN/PT desktop, mobile, and print/PDF rendering before publication. Pedro remains final visual and content approver.
+
+## Phase 3.1R1 Notes
+
+- Confirm the complete four-part boundary appears beside both protected-target principles in EN and PT.
+- Confirm TG360 states whether the bounded reference target changed or remained unchanged without implying production telemetry.
+- Confirm visible pt-PT copy consistently uses `sessão privada`, including CTA labels.
+- Validator now scans raw public HTML/SVG source, comments, accessibility attributes, exact metadata, all six routes, and runtime/network/storage markers.
+- Fourteen deterministic in-memory regression probes cover the final audit findings; no malformed fixture was written into the site.
+- Public disclosure tiers, vendor neutrality, DORA scope, and data-protection scope are unchanged.
+- Pedro visual review remains pending for EN/PT desktop, mobile, and print/PDF.
+
+## Phase 3.1R2 Notes
+
+- Final validation review found that an entity-encoded internal identifier such as `TG&#67;B` could bypass literal raw-source matching.
+- The validator now scans literal source, up to three rounds of HTML-entity decoding, Unicode-normalized values, and HTML/SVG parser-decoded surfaces.
+- Coverage includes visible and hidden text, comments, metadata, Open Graph content, accessibility labels, title/data attributes, SVG title/description/text, and SVG descriptive attributes.
+- Deterministic in-memory probes cover decimal, hexadecimal, mixed-case, mixed literal/encoded, double-encoded, and encoded local-path cases.
+- Safe public clearance/receipt language, safe negative boundaries, SVG namespaces, and approved contact/social links remain accepted.
+- No public content or visual asset changed. Pedro visual review remains pending.
+- This is bounded entity-decoding protection, not a claim of universal Unicode-confusable or arbitrary-obfuscation resistance.
+
+## Phase 3.1R3 Notes
+
+- English and Portuguese AI Control routes now use language-specific public diagrams.
+- The hero visual is aligned to action clearance, bound receipt, separate protected-target verification, target-side accept/reject, and outcome proof.
+- Enterprise SVG roles and connectors prevent a semantically marked TrustGate-to-target bypass.
+- Portuguese TG360, hero, and enterprise labels are localized in title, description, and visible text.
+- Primary CTA contrast, hover, and keyboard focus were strengthened without changing behavior.
+- Print CSS protects compact units and heading continuity without forcing every section onto a new page.
+- A4 portrait: 14 pages EN and 14 pages PT; recommended orientation.
+- A4 landscape: 18 pages EN and 18 pages PT; coherent but more fragmented.
+- Pedro final desktop/mobile/print approval remains pending.
+
 ## Phase 0 Notes
 
 - LinkedIn placeholder is set to `https://www.linkedin.com/in/pedrobarbas/`.

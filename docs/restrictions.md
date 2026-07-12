@@ -43,6 +43,9 @@ Do not claim:
 - Portuguese compliance, legal, production, regulatory approval, or customer guarantees
 - IBM endorsement, IBM partnership, IBM Engineering AI Hub integration, live watsonx Orchestrate integration, live Manta integration, or live Db2 integration
 - live telemetry, connector execution, CP-7 authorization, ROI, realized savings, guaranteed savings, or avoided liability
+- unqualified execution-firewall positioning, production enforcement, or enterprise-wide non-bypassability
+- DORA compliance or certification, GDPR compliance, complete regulatory coverage, or supervisory acceptance
+- public receipt schemas, provenance mechanics, target-verification implementation, receipt-consumption implementation, or deployment topology
 - prediction, win probability, or likely winner selection
 - autonomous decisioning
 - replacement for human review

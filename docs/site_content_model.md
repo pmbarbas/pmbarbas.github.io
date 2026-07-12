@@ -16,7 +16,7 @@ The site is a static bilingual public-safe surface for Pedro Barbas. English is 
 | --- | --- | --- |
 | `/` | Balanced two-track public hub. | Short routing surface only; it must not become a long portfolio page or make one track visually overpower the other. |
 | `/procurement/` | Deal Hunter / Procurement Intelligence track. | Deal Hunter only; Ireland first, Portugal next; no TrustGate, Certify, Evidra, or FieldDelta product cards. |
-| `/ai-control/` | TrustGate Sovereign / AI Control presence page. | TrustGate Sovereign leads as the execution firewall for agentic AI; Certify, Evidra, and FieldDelta remain secondary related systems. |
+| `/ai-control/` | TrustGate Sovereign / AI Control presence page. | TrustGate Sovereign leads as the action-clearance and proof layer for consequential agentic AI; Certify, Evidra, and FieldDelta remain secondary related systems. |
 | `/pt/` | Portuguese (`pt-PT`) two-track public hub. | Must mirror the English hub claim boundaries and remain a translation, not a new positioning surface. |
 | `/pt/procurement/` | Portuguese (`pt-PT`) Deal Hunter / Procurement Intelligence track. | Must mirror the English procurement boundaries and keep track isolation. |
 | `/pt/ai-control/` | Portuguese (`pt-PT`) TrustGate Sovereign / AI Control presence page. | Must mirror the English TrustGate Sovereign boundaries and avoid Portuguese compliance/legal guarantees. |
@@ -45,7 +45,7 @@ Homepage framing:
 Track-specific framing:
 
 - `/procurement/` keeps Ireland first / Portugal next because that is the Deal Hunter country-positioning page.
-- `/ai-control/` remains the approved AI Control track, now led by TrustGate Sovereign as the execution firewall for agentic AI.
+- `/ai-control/` remains the approved AI Control track, led by TrustGate Sovereign as the action-clearance and proof layer for consequential agentic AI.
 - Track pages use persona-specific navigation to reduce cross-persona context leakage while keeping one static site.
 
 The homepage should help a visitor self-select in under 10-15 seconds while making both tracks clear, credible, and equal in treatment.
@@ -92,20 +92,23 @@ AI Control pages may use more technical language where appropriate.
 
 ## TrustGate Sovereign Buyer Journey
 
-The `/ai-control/` page is the TrustGate Sovereign presence page for CISO, CIO, AI governance, risk, audit, enterprise architecture, technical governance, and executive adoption conversations.
+The `/ai-control/` page is the TrustGate Sovereign presence page for risk, operational-resilience, DPO/privacy, CISO, CIO, AI-governance, internal-audit, enterprise-architecture, technical-governance, and executive-adoption conversations.
 
 TrustGate Sovereign must lead with:
 
-- the execution firewall for agentic AI
-- the action-clearance gap between deployment/platform governance and a specific action
+- the action-clearance and proof layer for consequential agentic AI
+- the distinction between deployment governance, platform governance, exact-action clearance, and protected-target verification
 - the line "A governed deployment and a governed platform do not automatically authorize a specific action."
 - the airport analogy
-- Principal -> Control -> Proof
-- Principal, Action, Context, Route, Admission, Telemetry, Proof, Held Gate
-- TG360 as the evidence cockpit
+- the clearance and verification chain
+- Principal, Purpose, Action, Target, Route, Evidence, Impact, Policy, Clearance, Receipt, Target Verification, Outcome Proof
+- the protected-target principle with bounded local-reference disclaimers
+- TG360 as the evidence cockpit, not a second decision engine
 - TGSG trust surfaces
 - an illustrative watsonx Orchestrate / Manta / Db2 scenario with no live integration claim
 - a vendor-neutral architecture note that the same execution-control roles may be fulfilled by other orchestration, lineage, context, data, application, or API technologies
+- DORA-oriented control evidence with a regulatory disclaimer
+- a compact data-protection accountability lens with DPIA and legal boundaries
 - clear boundaries and private walkthrough posture
 
 Certify, Evidra, and FieldDelta remain related evidence-first systems, but they must not compete visually or semantically with the TrustGate Sovereign lead.

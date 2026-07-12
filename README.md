@@ -12,7 +12,7 @@ The site is designed so selected public-safe files can later be copied into a cl
 
 - `/` - balanced two-track public hub.
 - `/procurement/` - Deal Hunter / Procurement Intelligence track for Ireland-first, Portugal-next buyer conversations.
-- `/ai-control/` - TrustGate Sovereign presence page for execution-time action governance and related evidence-first systems.
+- `/ai-control/` - TrustGate Sovereign presence page for action clearance, receipt evidence, protected-target verification, and related evidence-first systems.
 - `/pt/` - Portuguese (`pt-PT`) balanced public hub.
 - `/pt/procurement/` - Portuguese (`pt-PT`) Deal Hunter / Procurement Intelligence track.
 - `/pt/ai-control/` - Portuguese (`pt-PT`) TrustGate Sovereign presence page.
