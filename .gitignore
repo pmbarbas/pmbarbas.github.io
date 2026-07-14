@@ -9,3 +9,4 @@ __pycache__/
 id_rsa
 credentials.json
 token.json
+dist/

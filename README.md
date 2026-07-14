@@ -16,12 +16,13 @@ The site is designed so selected public-safe files can later be copied into a cl
 - `/pt/` - Portuguese (`pt-PT`) balanced public hub.
 - `/pt/procurement/` - Portuguese (`pt-PT`) Deal Hunter / Procurement Intelligence track.
 - `/pt/ai-control/` - Portuguese (`pt-PT`) TrustGate Sovereign presence page.
+- `/404.html` - branded, non-indexable response body for unknown Cloudflare Pages routes.
 
 English is the default language. Portuguese pages live under `/pt/`. Language switching is static same-page linking only: no auto-detection, redirects, JavaScript, cookies, or local storage.
 
 The root pages keep full hub navigation. Track pages use persona-specific navigation isolation: `/procurement/` and `/pt/procurement/` show Procurement, Boundaries/Limites, and Contact/Contacto only; `/ai-control/` and `/pt/ai-control/` show AI Control/Controlo IA, Boundaries/Limites, and Contact/Contacto only.
 
-No build step is required. The site uses static HTML, shared CSS, local SVGs, Markdown documentation, and a Python standard-library validation script.
+The public site uses static HTML, shared CSS, and local SVGs. Cloudflare Pages publishes only the generated `dist/` package; repository documentation and validation tooling are not copied into that package.
 
 ## Local Preview
 
@@ -70,6 +71,7 @@ Do not simply flip this private staging repo to public if it has ever contained 
 Files that may be copied for publication after review:
 
 - `index.html`
+- `404.html`
 - `procurement/index.html`
 - `ai-control/index.html`
 - `pt/index.html`
@@ -77,8 +79,8 @@ Files that may be copied for publication after review:
 - `pt/ai-control/index.html`
 - `styles.css`
 - `assets/`
-- `docs/`
-- `README.md`
+
+Cloudflare Pages must publish only `dist/`. Repository documentation, validation scripts, support records, and handoff files are excluded from the public package.
 
 Files that do not belong in this repository:
 

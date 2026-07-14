@@ -26,6 +26,7 @@ HTML_PAGES = [
 
 REQUIRED_FILES = [
     "index.html",
+    "404.html",
     "styles.css",
     "procurement/index.html",
     "ai-control/index.html",
@@ -45,8 +46,18 @@ REQUIRED_FILES = [
     "docs/PUBLIC_SURFACE_PHASE_3_1R3R1_HANDOFF.md",
     "docs/codex_runs/20260608_phase_2_1_hub_public_language_qa_handoff.md",
     "docs/codex_runs/20260608_phase_2_2_homepage_public_language_correction_handoff.md",
+    "docs/codex_runs/20260714_phase_3_2_cloudflare_404_hardening_handoff.md",
     "scripts/validate_public_surface.py",
 ]
+
+CLOUDFLARE_BUILD_COMMAND = (
+    "set -eu; rm -rf dist; mkdir -p dist; cp index.html 404.html styles.css dist/; "
+    "cp -R assets procurement ai-control pt dist/; test -f dist/index.html; "
+    "test -f dist/404.html; test -f dist/styles.css; test -f dist/assets/favicon.svg; "
+    "test -f dist/procurement/index.html; test -f dist/ai-control/index.html; "
+    "test -f dist/pt/index.html; test -f dist/pt/procurement/index.html; "
+    "test -f dist/pt/ai-control/index.html"
+)
 
 REQUIRED_SVGS = [
     "assets/mark.svg",
@@ -776,6 +787,71 @@ def check_required_files(errors: list[str]) -> None:
             add_error(errors, f"Required file missing: {required}")
         elif path.is_file() and not read_text(path).strip():
             add_error(errors, f"Required file is empty: {required}")
+
+
+def not_found_contract_failures(text: str) -> list[str]:
+    failures: list[str] = []
+    parser = parse_public_html(text)
+    required_patterns = {
+        "English document language": r'<html\s+lang="en"',
+        "noindex robots directive": r'<meta\b[^>]*name="robots"[^>]*content="noindex"',
+        "root-relative stylesheet": r'<link\b[^>]*rel="stylesheet"[^>]*href="/styles\.css"',
+        "root-relative favicon": r'<link\b[^>]*rel="icon"[^>]*href="/assets/favicon\.svg"',
+        "homepage link": r'<a\b[^>]*href="/"',
+    }
+    for label, pattern in required_patterns.items():
+        if not re.search(pattern, text, re.IGNORECASE):
+            failures.append(f"404 page missing {label}")
+    if "Page not found" not in parser.title or "This page could not be found." not in visible_text(text):
+        failures.append("404 page missing clear page-not-found title or heading")
+    if parser.scripts:
+        failures.append("404 page must not contain JavaScript")
+
+    prohibited = ["docs/", "scripts/", "codex_runs", "private repository", "support request", "source code", "deployment internals"]
+    lower = html.unescape(text).casefold()
+    for term in prohibited:
+        if term.casefold() in lower:
+            failures.append(f"404 page exposes prohibited internal language: {term}")
+
+    for attribute, value in re.findall(r'\b(href|src)="([^"]+)"', text, re.IGNORECASE):
+        lowered = value.casefold()
+        if lowered.startswith(("http://", "https://", "//", "javascript:")):
+            failures.append(f"404 page contains external or executable {attribute}: {value}")
+        elif not value.startswith(("/", "#")):
+            failures.append(f"404 page contains directory-dependent {attribute}: {value}")
+    return failures
+
+
+def check_not_found_page(errors: list[str]) -> None:
+    path = ROOT / "404.html"
+    if not path.exists():
+        return
+    for failure in not_found_contract_failures(read_text(path)):
+        add_error(errors, failure)
+
+
+def check_cloudflare_package(errors: list[str]) -> None:
+    runbook = ROOT / "docs/deployment_runbook.md"
+    if runbook.exists() and CLOUDFLARE_BUILD_COMMAND not in read_text(runbook):
+        add_error(errors, "Deployment runbook missing exact Cloudflare build command")
+    dist = ROOT / "dist"
+    if not dist.exists():
+        return
+    allowed = {"index.html", "404.html", "styles.css", "assets", "procurement", "ai-control", "pt"}
+    found = {path.name for path in dist.iterdir()}
+    if found != allowed:
+        add_error(errors, f"dist/ top-level package must contain only approved public entries; found {sorted(found)}")
+    required = [
+        "index.html", "404.html", "styles.css", "assets/favicon.svg",
+        "procurement/index.html", "ai-control/index.html", "pt/index.html",
+        "pt/procurement/index.html", "pt/ai-control/index.html",
+    ]
+    for relative in required:
+        if not (dist / relative).is_file():
+            add_error(errors, f"Cloudflare package missing: dist/{relative}")
+    for private_name in ("docs", "scripts", "README.md", ".git"):
+        if (dist / private_name).exists():
+            add_error(errors, f"Private repository entry copied into dist/: {private_name}")
 
 
 def check_page_content(errors: list[str]) -> None:
@@ -1766,6 +1842,8 @@ def check_validator_regressions(errors: list[str]) -> None:
 def main() -> int:
     errors: list[str] = []
     check_required_files(errors)
+    check_not_found_page(errors)
+    check_cloudflare_package(errors)
     check_page_content(errors)
     check_ai_control_contract(errors)
     check_all_route_integrity(errors)

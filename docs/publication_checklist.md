@@ -1,5 +1,18 @@
 # Publication Checklist
 
+## Phase 3.2 Cloudflare 404 Gate
+
+- [ ] Root `404.html` exists and renders with the approved visual identity.
+- [ ] `404.html` includes `noindex` and exposes no requested path or internal language.
+- [ ] All 404 styles, assets, and links use root-relative paths.
+- [ ] Nested unknown paths retain styling in the Cloudflare response body.
+- [ ] Unknown paths return HTTP 404 rather than HTTP 200.
+- [ ] The homepage is not served as an unknown-route fallback.
+- [ ] Private-looking routes reveal no private content or directory listing.
+- [ ] `dist/` contains no `docs/`, `scripts/`, `README.md`, `.git/`, support record, or Codex handoff.
+- [ ] Known public routes return HTTP 200 after deployment.
+- [ ] The branded 404 response body is confirmed after deployment.
+
 ## Phase 3.1R3R1 Visual Evidence Gate
 
 - [ ] Confirm both routes load only the versioned `*-en-v2.svg` / `*-pt-v2.svg` visual pairs.
